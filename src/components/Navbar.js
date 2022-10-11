@@ -15,6 +15,7 @@ const Navbar = () => {
         >
           <img
             src="logo.png"
+            alt=""
             className="flex-shrink-0 w-10 h-10 rounded-full text-gray-900"
           />
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
@@ -90,6 +91,7 @@ const Navbar = () => {
                     >
                       <img
                         src="logo.png"
+                        alt=""
                         className="flex-shrink-0 w-8 h-8 rounded-full text-gray-900"
                       />
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
