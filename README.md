@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+## Project Name: Quizzy
+
+### Live Site Link: https://scintillating-banoffee-e3ecb4.netlify.app/
+
+#### Quiz with validate by Toast
+
+#### Used Loader
+
+#### View Rechart in Statistics
+
+#### Fully Responsive For Desktop, Tablet and Mobile devices
+
+### Framework:
+
+#### `TailWind`
+
+#### 3. Second Route I added a Recharts of How many questions of Each Topic
+
+# This is the Quizzes app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
