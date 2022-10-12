@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router";
 import HeaderPage from "./HeaderPage";
 import Topic from "./Topic";
 
-const Topics = () => {
+const Home = () => {
   const topics = useLoaderData();
   return (
     <div>
@@ -17,4 +17,4 @@ const Topics = () => {
   );
 };
 
-export default Topics;
+export default Home;

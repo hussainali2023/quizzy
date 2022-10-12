@@ -4,8 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { EyeIcon } from "@heroicons/react/24/solid";
 
 const Questions = ({ qna }) => {
-  // console.log(qna);
-  console.log(qna);
   const { question, options, correctAnswer, id } = qna;
   const [ans, setAns] = useState();
 
