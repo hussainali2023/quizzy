@@ -20,9 +20,20 @@ const Blog = () => {
       </div>
       <div className=" mt-6 bg-sky-100 p-6 rounded-md">
         <h1 className=" font-semibold text-lg mb-3 lg:text-2xl md:text-2xl lg:mb-6">
-          2.
+          2. How does context api works ?
         </h1>
-        <p className=" text-sm lg:text-base"></p>
+        <p className=" text-sm lg:text-base">
+          The React Context API is a way for a React app to effectively produce
+          global variables that can be passed around. This is the alternative to
+          "prop drilling" or moving props from grandparent to child to parent,
+          and so on.
+          <br />
+          React.createContext() is all you need. It returns a consumer and a
+          provider. Provider is a component that as it's names suggests provides
+          the state to its children. It will hold the "store" and be the parent
+          of all the components that might need that store. Consumer as it so
+          happens is a component that consumes and uses the state.
+        </p>
       </div>
       <div className=" mt-6 bg-sky-100 p-6 rounded-md">
         <h1 className=" font-semibold text-lg mb-3 lg:text-2xl md:text-2xl lg:mb-6">
