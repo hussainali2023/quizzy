@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { BeakerIcon, EyeIcon } from "@heroicons/react/24/solid";
 
 const Questions = ({ qna }) => {
   // console.log(qna);
@@ -26,6 +27,10 @@ const Questions = ({ qna }) => {
     }
   };
 
+  const showAnswer = () => {
+    toast.info(correctAnswer, { autoCloseL: 1000 });
+  };
+
   return (
     <div>
       <ToastContainer
@@ -40,24 +45,26 @@ const Questions = ({ qna }) => {
         pauseOnHover
         theme="colored"
       />
-      <div>
-        <h1 className="text-2xl font-semibold text-center">
+      <div className=" mb-8 bg-blue-100 md:mx-20 lg:mx-36 p-6 rounded-md">
+        <h1 className="text-2xl font-semibold text-center mb-6">
           {question.replace(/(<([^>]+)>)/gi, "")}
         </h1>
+        <EyeIcon
+          onClick={showAnswer}
+          className="h-6 w-6 text-lime-900 relative left-3/4 cursor-pointer"
+        />
 
-        <div>
+        <div className="justify-center align-center ">
           {options.map((option) => (
-            <h1 className="justify-center flex">
+            <h1 className=" flex align-middle">
               <input
-                className=" flex"
+                className=" flex text-lg"
                 type="radio"
                 // name="question"
                 name={id}
                 onChange={(e) => ansCheck(option)}
               />
-              <p key={option} className=" align-center">
-                {option}
-              </p>
+              <p className=" text-lg ml-2">{option}</p>
             </h1>
           ))}
         </div>

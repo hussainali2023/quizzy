@@ -8,7 +8,7 @@ const AllQuiz = () => {
   //   console.log(quizes);
   return (
     <div>
-      <h1 className="text-2xl font-semibold text-center">
+      <h1 className="text-2xl font-semibold text-center mb-12">
         Quiz Of <span className=" text-green-700">{name}</span>
       </h1>
       {questions.map((qna) => (
