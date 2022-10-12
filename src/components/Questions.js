@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BeakerIcon, EyeIcon } from "@heroicons/react/24/solid";
+import { EyeIcon } from "@heroicons/react/24/solid";
 
 const Questions = ({ qna }) => {
   // console.log(qna);
@@ -45,6 +45,7 @@ const Questions = ({ qna }) => {
         pauseOnHover
         theme="colored"
       />
+
       <div className=" mb-8 bg-blue-100 md:mx-20 lg:mx-36 p-6 rounded-md">
         <h1 className="text-2xl font-semibold text-center mb-6">
           {question.replace(/(<([^>]+)>)/gi, "")}

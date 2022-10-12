@@ -5,7 +5,7 @@ const Navbar = () => {
   // const [cart, setCart] = useContext(CartContext)
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 mb-16">
       <div className="relative flex items-center justify-between">
         <Link
           to="/"
@@ -14,7 +14,7 @@ const Navbar = () => {
           className="inline-flex items-center"
         >
           <img
-            src="logo.png"
+            src="logos.png"
             alt=""
             className="flex-shrink-0 w-10 h-10 rounded-full text-gray-900"
           />
@@ -90,7 +90,7 @@ const Navbar = () => {
                       className="inline-flex items-center"
                     >
                       <img
-                        src="logo.png"
+                        src="logos.png"
                         alt=""
                         className="flex-shrink-0 w-8 h-8 rounded-full text-gray-900"
                       />

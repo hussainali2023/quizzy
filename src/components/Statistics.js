@@ -15,7 +15,7 @@ export default function Statistics() {
   const loadData = useLoaderData();
   const data = loadData.data;
   return (
-    <ResponsiveContainer width="100%" aspect={3}>
+    <ResponsiveContainer width="100%" height={350}>
       <LineChart
         width={500}
         height={300}
